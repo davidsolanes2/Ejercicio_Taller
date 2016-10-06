@@ -29,12 +29,12 @@ public class MainVehiculos {
 
             System.out.println(registro.obtenerTodos());
 
-            registro.obtenerVehiculo("4749JAV").ifPresent(coche -> System.out.println("Coche con matrícula 4749JAV: "+coche));
+            registro.obtenerVehiculo("4749JAV").ifPresent(coche -> System.out.println("Coche con matrícula 4749JAV: " + coche));
 
         // Bucle expresado en Java8
             registro.obtenerVehiculosMarca("Lexus").forEach(coche -> System.out.println(coche));
 
-            registro.obtenerVehiculoPrecioMax().ifPresent(coche -> System.out.println("Coche precio máximo: "+coche));
+            registro.obtenerVehiculoPrecioMax().ifPresent(coche -> System.out.println("Coche precio máximo: " + coche));
 
             System.out.println("Eliminando coche con matrícula 1234ENG");
             registro.eliminarVehiculo("1234ENG");
